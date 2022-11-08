@@ -6,17 +6,14 @@ body{
     display: flex;
     font-family: sans-serif;
 }
-#right-side{
-    width:75%;
-    margin-left: 30%; 
-    height:fit-content;  
-}
+
+
 #navbar{
     display: block;
     width: 25%;
     height: 100%;
     position:fixed;
-    z-index: 100;
+    z-index: 1;
     margin-left:2%;
     padding-top: 50px;
     background-color:rgb(37, 38, 39);
@@ -53,19 +50,38 @@ body{
     font-size: 20px;
     background-color:rgb(37, 38, 39);
 }
-#android{
-    visibility: hidden;
-    width: 40px;
-    height: 40px;
+
+#right-side{
+    width:75%;
+    margin-left: 30%; 
+    height:fit-content;  
 }
+
 #home{
     /* display: flex; */
-    background-color: white;
+    /* background-color: white; */
+    padding-top: 5%;
     height:fit-content
     /* color: rgba(255, 255, 255, 0.801); */
 }
 #home >div{
     display: flex;
+}
+.checkbtn{
+    font-size: 50px;
+    color: black;
+    /* float:left; */
+    width:fit-content;
+    line-height: 50px;
+    /* margin-left:%; */
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none; 
+}
+#check:checked~#navbar{
+    left: 0;
 }
 #hm1 > h1{
     margin-top: 5%;
@@ -317,9 +333,9 @@ body{
     justify-content: center;
   }
   #contacts{
-    margin-top: 30px;
+    margin-top: 0px;
     /* background-color:rgb(10, 9, 9); */
-    padding: 80px 0;
+    padding: 70px 0;
   }
   .contact >div> h1{
     text-align: center;
@@ -358,7 +374,8 @@ body{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 30px;
   }
 
   button[type=submit]:hover{
@@ -383,7 +400,7 @@ body{
     }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 998px) {
     #hm1 > h1{
         padding-top: 7%;
         width: 70%;
@@ -398,7 +415,7 @@ body{
         margin-top: -1%;
     }
     #home-img{
-        margin-left: -90%;
+        margin-left: -40%;
         margin-top:60%;
         height: 250px;
         width: 300px;
@@ -439,8 +456,19 @@ body{
     }
 }
 @media only screen and (max-width:600px) {
+    .checkbtn{
+        display: block;
+    }
     #navbar{
-        display:none;
+        /* display:none; */
+        width: 70%;
+        margin-top: 15%;
+        /* left: -100%; */
+        left: -100%;
+        transition: all .5s;
+    }
+    #check:checked~#navbar{
+        left: 0;
     }
     #right-side{
         margin-left:10%
@@ -450,19 +478,13 @@ body{
         width: 70%;
     }
     #mypic{
-        margin-top: -20%;
+        margin-top: 4%;
     }
     .name{
         margin-top: -1%;
     }
     #nav{
         margin-top: -1%;
-    }
-    #android{
-        cursor: pointer;
-        visibility:visible;
-        margin-top: 10%;
-        margin-left: -7%;
     }
     #home-img{
         margin-left: -90%;
