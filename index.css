@@ -56,7 +56,7 @@ body{
     margin-left: 30%; 
     height:fit-content;  
 }
-
+/* home section */
 #home{
     /* display: flex; */
     /* background-color: white; */
@@ -67,22 +67,67 @@ body{
 #home >div{
     display: flex;
 }
-.checkbtn{
-    font-size: 50px;
-    color: black;
-    /* float:left; */
-    width:fit-content;
-    line-height: 50px;
-    /* margin-left:%; */
+/* menu button section */
+  .menu-icon {
     cursor: pointer;
     display: none;
-}
-#check{
-    display: none; 
-}
-#check:checked~#navbar{
-    left: 0;
-}
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+   .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 18px;
+  }
+  
+   .menu-icon .navicon:before,
+   .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+   .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+   .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+   .menu-btn {
+    display: none;
+   }
+  
+   .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+   .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+/* hm1 sections */
 #hm1 > h1{
     margin-top: 5%;
     font-size: 40px;
@@ -456,19 +501,22 @@ body{
     }
 }
 @media only screen and (max-width:600px) {
-    .checkbtn{
-        display: block;
-    }
     #navbar{
-        /* display:none; */
-        width: 70%;
+        width: 90%;
         margin-top: 15%;
-        /* left: -100%; */
         left: -100%;
         transition: all .5s;
     }
-    #check:checked~#navbar{
-        left: 0;
+    .menu-btn {
+        display: none;
+    }
+    
+    .menu-btn:checked ~ #navbar{
+        /* display: block; */
+        left: 0%;
+    }
+    .menu-icon{
+        display: block;
     }
     #right-side{
         margin-left:10%
