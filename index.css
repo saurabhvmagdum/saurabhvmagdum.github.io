@@ -65,73 +65,6 @@ body{
 #home >div{
     display: flex;
 }
-/* menu button section */
-  .menu-icon {
-    cursor: pointer;
-    display: none;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-   .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: .2s ease-out;
-    width: 18px;
-  }
-  
-   .menu-icon .navicon:before,
-   .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-   .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-   .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-  
-   .menu-btn {
-    display: none;
-   }
-  
-   .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-   .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-  .menu-btn:checked ~ .navbar:before{
-    /* display: block; */
-    left: -100%;
-    }
-    .menu-btn:checked ~ .navbar:after{
-        left: 0%;
-    }
-  
 /* hm1 sections */
 #hm1 > h1{
     margin-top: 5%;
@@ -148,6 +81,7 @@ body{
     height: 0px;
     display: flex;
     background-color: rgb(63, 65, 66);
+    margin-top: 3%;
 }
 #github_icons{
     width: 50px;
