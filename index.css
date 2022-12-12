@@ -181,12 +181,18 @@ body{
 #bskills > div >img{
     width: 100%;
     height: 80%;
-}    
+} 
+#bskills > div > img:hover{
+    width:120%;
+    height: 110%;
+    transition: width 1s;
+}
 #bskills> div > p{
     text-align: center;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #techskills{
     padding-left: 50px;
     padding-top: 40px;
@@ -199,7 +205,11 @@ body{
     width: 50%;
     height: 50%;
 }
-
+#techskills > img:hover{
+    width:60%;
+    height: 60%;
+    transition:ease-out 1s;
+}
 .education{
     width: 90%;
     padding-top: 80px;
@@ -265,6 +275,7 @@ body{
     width: 80px;
     height: 40px;
     margin-left: 5px;
+    border-radius: 0%;
 }
 .tech-icons{
     display: flex;
