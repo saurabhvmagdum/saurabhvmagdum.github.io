@@ -149,8 +149,9 @@ body{
 #about > p{
     width: 55%;
     height: 100%;
-    text-align:left;
-    font-size: 25px;
+    text-align:justify;
+    font-size: 20px;
+    letter-spacing: 0.5 px;
     word-spacing: 2%;
 }
 
@@ -260,6 +261,11 @@ body{
     height: 90%;
     border: 2px dotted black;
     border-radius: 5px;
+}
+.hidden > img:hover{
+    width:95%;
+    height: 110%;
+    transition:ease-out 1s;
 }
 .hidden > div{
     display: flex;
@@ -489,6 +495,9 @@ body{
     #hm1 > h1{
         padding-top: 7%;
         width: 70%;
+    }
+    #underinfo{
+        margin-bottom: 8%;
     }
     #mypic{
         display: none;
