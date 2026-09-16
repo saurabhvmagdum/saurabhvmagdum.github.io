@@ -11,9 +11,10 @@ export function FeaturedProjects() {
   const headerRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
-  if (!featuredProjectsConfig.titleRegular && featuredProjectsConfig.projects.length === 0) return null;
+  const isEmpty = !featuredProjectsConfig.titleRegular && featuredProjectsConfig.projects.length === 0;
 
   useEffect(() => {
+    if (isEmpty) return;
     const ctx = gsap.context(() => {
       // Header — slide up
       ScrollTrigger.create({
@@ -120,7 +121,9 @@ export function FeaturedProjects() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isEmpty]);
+
+  if (isEmpty) return null;
 
   return (
     <section

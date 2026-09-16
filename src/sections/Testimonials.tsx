@@ -4,9 +4,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper/modules';
 import { Quote } from 'lucide-react';
-// @ts-ignore
+// @ts-expect-error swiper css module
 import 'swiper/css';
-// @ts-ignore
+// @ts-expect-error swiper css module
 import 'swiper/css/free-mode';
 import { testimonialsConfig } from '../config';
 
@@ -17,9 +17,10 @@ export function Testimonials() {
   const headerRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  if (!testimonialsConfig.titleRegular && testimonialsConfig.testimonials.length === 0) return null;
+  const isEmpty = !testimonialsConfig.titleRegular && testimonialsConfig.testimonials.length === 0;
 
   useEffect(() => {
+    if (isEmpty) return;
     const ctx = gsap.context(() => {
       // Header — slide up
       ScrollTrigger.create({
@@ -51,7 +52,9 @@ export function Testimonials() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isEmpty]);
+
+  if (isEmpty) return null;
 
   return (
     <section

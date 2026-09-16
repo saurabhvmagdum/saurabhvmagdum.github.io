@@ -17,9 +17,10 @@ export function FAQ() {
   const accordionRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
 
-  if (!faqConfig.titleRegular && faqConfig.faqs.length === 0) return null;
+  const isEmpty = !faqConfig.titleRegular && faqConfig.faqs.length === 0;
 
   useEffect(() => {
+    if (isEmpty) return;
     const ctx = gsap.context(() => {
       // Header — slide up
       ScrollTrigger.create({
@@ -74,7 +75,9 @@ export function FAQ() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isEmpty]);
+
+  if (isEmpty) return null;
 
   return (
     <section
