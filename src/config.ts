@@ -1,5 +1,5 @@
 // Site Configuration
-// Saurabh Magdum - AI & ML Engineer Portfolio
+// Saurabh Magdum - AI Researcher & ML Engineer Portfolio
 
 export interface SiteConfig {
   language: string;
@@ -9,8 +9,8 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   language: "en",
-  siteTitle: "Saurabh Magdum | AI & ML Engineer",
-  siteDescription: "Machine Learning Engineer and AI Agent Architect specializing in Generative AI, Agentic Workflows, and Blockchain Interoperability.",
+  siteTitle: "Saurabh Magdum | AI Researcher & Engineer",
+  siteDescription: "AI Researcher and ML Engineer specializing in Federated Learning, Privacy-Preserving AI, Quantum Computing, and Blockchain Interoperability. Published IEEE researcher.",
 };
 
 // Hero Section
@@ -24,10 +24,10 @@ export interface HeroConfig {
 }
 
 export const heroConfig: HeroConfig = {
-  backgroundText: "AI ENGINEER",
+  backgroundText: "AI RESEARCHER",
   heroImage: "/hero-portrait.png",
-  heroImageAlt: "Saurabh Magdum - AI & ML Engineer",
-  overlayText: "Building Intelligent Autonomous Systems",
+  heroImageAlt: "Saurabh Magdum - AI Researcher & ML Engineer",
+  overlayText: "Researching Intelligent & Privacy-Preserving Systems",
   brandName: "Saurabh Magdum",
   navLinks: [
     { label: "Home", href: "#home" },
@@ -54,17 +54,17 @@ export interface IntroGridConfig {
 }
 
 export const introGridConfig: IntroGridConfig = {
-  titleLine1: "Machine Learning",
-  titleLine2: "Engineer & AI Architect",
-  description: "I am a Machine Learning Engineer and AI Agent Architect with a passion for bridging the gap between Web2 and Web3. Currently serving as an AI Agent Development Intern at Decloud Labs, I build autonomous systems that can execute complex workflows on-chain and off-chain. My expertise lies in Federated Learning, Privacy-Preserving AI, and creating scalable decentralized architectures.",
+  titleLine1: "AI Researcher &",
+  titleLine2: "ML Engineer",
+  description: "I am an AI Researcher and ML Engineer with a passion for building privacy-preserving intelligent systems. Currently serving as an Assistant Professor at PCCOE and an AI Agent Development Intern at Decloud Labs, I research at the intersection of Federated Learning, Blockchain, and Quantum Computing. Published IEEE researcher with hands-on experience building privacy-first AI systems for healthcare, security, and decentralized ecosystems.",
   portfolioImages: [
-    { src: "/grid-1.jpg", alt: "AI Development Workspace" },
+    { src: "/grid-1.jpg", alt: "AI Research Workspace" },
     { src: "/grid-2.jpg", alt: "ML Performance Dashboard" },
     { src: "/grid-3.jpg", alt: "Human-AI Collaboration" },
     { src: "/grid-4.jpg", alt: "Decentralized Network" },
-    { src: "/grid-5.jpg", alt: "Smart Contract Development" },
+    { src: "/grid-5.jpg", alt: "Quantum Computing" },
   ],
-  accentText: "AI & Blockchain - 2024",
+  accentText: "AI Research - 2025",
 };
 
 // Featured Projects Section
@@ -97,27 +97,51 @@ export const featuredProjectsConfig: FeaturedProjectsConfig = {
   projects: [
     {
       id: 1,
-      title: "ConvLSTM Video Anomaly Detection",
-      category: "Computer Vision",
-      year: "2024",
+      title: "Q-GUARD: Quantum-Optimized SOC Decision Engine",
+      category: "Quantum Computing · AI Security",
+      year: "2025 — Ongoing",
       image: "/project-ai-ml.jpg",
-      description: "A lightweight neural network for detecting anomalies in real-time surveillance videos using Spatio-Temporal features. Built with Python, TensorFlow, and OpenCV.",
+      description: "A quantum-optimized decision engine transforming SOC alert triage into a QUBO problem, solved using QAOA on Fujitsu's 40-qubit quantum simulator. Finalist at Fujitsu Quantum Computing Challenge 2026.",
     },
     {
       id: 2,
-      title: "DFIAN - Decentralized Fraud Alert",
-      category: "Blockchain",
-      year: "2024",
-      image: "/project-blockchain.jpg",
-      description: "Blockchain-based system for secure, real-time information sharing among banks to prevent identity fraud. Powered by Solidity, React, Polygon, and Web3.js.",
+      title: "Multi-Domain RAG System for ISRO",
+      category: "RAG · LLM · Enterprise AI",
+      year: "2025 — Ongoing",
+      image: "/project-healthcare.jpg",
+      description: "On-premise Retrieval-Augmented Generation system integrating multiple data domains for accurate, context-aware query answering in restricted environments. Stack: Python, FAISS, Elasticsearch, LangChain, Docker, FastAPI, PostgreSQL.",
     },
     {
       id: 3,
-      title: "Mental Health Rec. System",
-      category: "Federated Learning",
+      title: "Privacy-Preserving Mental Health Rec. System",
+      category: "Federated Learning · Blockchain",
       year: "2024",
       image: "/project-healthcare.jpg",
-      description: "Privacy-preserving framework combining Federated Learning and Blockchain for secure AI health recommendations. Built with PyTorch, Flower, and IPFS.",
+      description: "Framework combining Federated Learning and Blockchain for secure, AI-powered mental health recommendations without compromising user privacy. Integrates speech/text analysis from wearables with decentralized IPFS storage. Built with PyTorch, Flower, and Solidity.",
+    },
+    {
+      id: 4,
+      title: "DFIAN — Decentralized Fraudulent Identity Alert Network",
+      category: "Blockchain · Security",
+      year: "2024",
+      image: "/project-blockchain.jpg",
+      description: "Blockchain-based fraud detection and alert system enabling banks to share fraudulent identity information in real time while preserving privacy. Features cross-bank communication, regulator oversight, and reputation scoring. Stack: Solidity, React.js, Web3.js, Ethereum/Polygon.",
+    },
+    {
+      id: 5,
+      title: "CredenceAI — Multi-Agent Misinformation Verification",
+      category: "Multi-Agent AI · Computer Vision",
+      year: "2025",
+      image: "/project-ai-ml.jpg",
+      description: "Cloud-native multi-agent AI system for real-time multimodal misinformation verification (text, image, audio, video) using Azure-based microservices architecture. Employs parallel verification pipelines and CNN-based detection.",
+    },
+    {
+      id: 6,
+      title: "ConvLSTM-Based Video Anomaly Detection",
+      category: "Computer Vision · Deep Learning",
+      year: "2024",
+      image: "/project-ai-ml.jpg",
+      description: "Lightweight ConvLSTM neural network detecting anomalies in surveillance videos using the CUHK Avenue Dataset. Implements efficient preprocessing, sequence generation, and adaptive thresholding for real-time anomaly detection.",
     },
   ],
 };
@@ -139,29 +163,29 @@ export interface ServicesConfig {
 
 export const servicesConfig: ServicesConfig = {
   subtitle: "What I Offer",
-  titleLine1: "Technical",
-  titleLine2Italic: "Expertise",
-  description: "I specialize in building intelligent systems that combine cutting-edge AI with decentralized technologies. From autonomous AI agents to privacy-preserving machine learning solutions.",
+  titleLine1: "Research &",
+  titleLine2Italic: "Technical Expertise",
+  description: "I specialize in AI research and engineering at the intersection of Federated Learning, Privacy-Preserving AI, Blockchain, and Quantum Computing — building systems that are intelligent, secure, and ethically grounded.",
   services: [
     {
       iconName: "Sparkles",
-      title: "AI & Machine Learning",
-      description: "Expertise in Python, TensorFlow, PyTorch, OpenCV, Pandas, and NumPy for building robust ML models and computer vision solutions.",
+      title: "AI & Machine Learning Research",
+      description: "Deep expertise in PyTorch, TensorFlow, Federated Learning (Flower/TFF), NLP (BERT, HuggingFace Transformers), and Computer Vision for rigorous AI research and real-world deployment.",
     },
     {
       iconName: "Diamond",
-      title: "Web3 & Blockchain",
-      description: "Solidity, Ethereum, Polygon, IPFS, and Web3.js for creating decentralized applications and smart contracts.",
+      title: "Blockchain & Decentralized Systems",
+      description: "Solidity, Ethereum, Polygon, IPFS, Web3.js, and Truffle for building decentralized applications, smart contracts, and privacy-preserving blockchain protocols.",
     },
     {
       iconName: "Users",
-      title: "Full Stack Development",
-      description: "React, Node.js, PostgreSQL, Docker, and Git for building scalable full-stack applications with modern DevOps practices.",
+      title: "Quantum Computing",
+      description: "Applying Quantum Approximate Optimization Algorithm (QAOA) and post-quantum cryptography (Kyber, Dilithium) to real-world optimization and security problems.",
     },
     {
       iconName: "Camera",
-      title: "AI Agent Architecture",
-      description: "Designing and implementing autonomous AI agents using Skynet tools and APIs for complex on-chain and off-chain workflows.",
+      title: "Full Stack & AI Deployment",
+      description: "React.js, Node.js, FastAPI, Docker, PostgreSQL, and LangChain for building and deploying end-to-end AI-powered full-stack applications at scale.",
     },
   ],
 };
@@ -195,36 +219,36 @@ export interface WhyChooseMeConfig {
 
 export const whyChooseMeConfig: WhyChooseMeConfig = {
   subtitle: "Why Work With Me",
-  titleRegular: "Bridging",
-  titleItalic: "Web2 & Web3",
+  titleRegular: "Research-Driven",
+  titleItalic: "Engineering",
   statsLabel: "By The Numbers",
   stats: [
     { value: 3, suffix: "+", label: "Years Experience" },
-    { value: 10, suffix: "+", label: "Projects Completed" },
-    { value: 5, suffix: "+", label: "Tech Stack Areas" },
+    { value: 8, suffix: "+", label: "Projects Completed" },
+    { value: 1, suffix: "", label: "IEEE Publication" },
     { value: 100, suffix: "%", label: "Commitment to Quality" },
   ],
   featureCards: [
     {
       image: "/feature-1.jpg",
-      imageAlt: "AI Automation",
-      title: "AI Agent Development",
-      description: "Building autonomous systems that can execute complex workflows using cutting-edge AI technologies.",
+      imageAlt: "Privacy-Preserving AI",
+      title: "Privacy-Preserving AI",
+      description: "Implementing Federated Learning and Differential Privacy solutions that protect user data while delivering powerful AI capabilities.",
     },
     {
       image: "/feature-2.jpg",
-      imageAlt: "ML Model Training",
-      title: "Privacy-Preserving ML",
-      description: "Implementing Federated Learning solutions that protect user data while delivering powerful AI capabilities.",
+      imageAlt: "Quantum & Security Research",
+      title: "Quantum & Security Research",
+      description: "Applying quantum optimization and post-quantum cryptography to next-generation security and decision-making systems.",
     },
   ],
   wideImage: "/wide-tech.jpg",
-  wideImageAlt: "Future of AI and Blockchain",
-  wideTitle: "The Future is Autonomous",
-  wideDescription: "Combining AI and blockchain to build the next generation of intelligent decentralized applications.",
+  wideImageAlt: "AI Research and Blockchain",
+  wideTitle: "Research with Real-World Impact",
+  wideDescription: "From IEEE-published Federated Learning research to Fujitsu Quantum Challenge finals — combining rigorous academic research with practical engineering.",
 };
 
-// Testimonials Section
+// Testimonials / Experience Section
 export interface Testimonial {
   id: number;
   name: string;
@@ -247,10 +271,24 @@ export const testimonialsConfig: TestimonialsConfig = {
   testimonials: [
     {
       id: 1,
+      name: "PCCOE — Pimpri Chinchwad College of Engineering",
+      role: "Assistant Professor · July 2026 – Present",
+      image: "/grid-1.jpg",
+      quote: "Delivering lectures, tutorials, and practical sessions for undergraduate students with a focus on Computer Engineering and emerging technologies. Guiding students in academic assignments, technical projects, research activities, and problem-solving. Designing course materials, evaluating student performance, and contributing to departmental academic activities.",
+    },
+    {
+      id: 2,
+      name: "PCCOE — Pimpri Chinchwad College of Engineering",
+      role: "Teaching Assistant · Sept 2025 – May 2026",
+      image: "/grid-2.jpg",
+      quote: "Assisted faculty in delivering lectures, tutorials, and practical sessions for undergraduate students. Provided academic support by explaining concepts, resolving doubts, and guiding students in assignments. Evaluated assignments, quizzes, and exams. Mentored students on academic projects and research work.",
+    },
+    {
+      id: 3,
       name: "Decloud Labs",
-      role: "AI Agent Development Intern",
+      role: "AI Agent Development Intern · Dec 2024 – Dec 2025",
       image: "/grid-3.jpg",
-      quote: "Dec 2024 - Present: Architecting autonomous AI agents using Skynet tools and APIs. Integrating Web2 and Web3 resources to expand agent capabilities. Optimizing platform core features for better user experience.",
+      quote: "Architected autonomous AI agents using Skynet tools and APIs. Integrated Web2 and Web3 resources to expand agent capabilities and improve operational efficiency. Contributed to the enhancement of Skynet's core platform, optimizing features and elevating the overall user experience.",
     },
   ],
 };
@@ -282,23 +320,33 @@ export const faqConfig: FAQConfig = {
   faqs: [
     {
       id: "1",
-      question: "What is your primary area of expertise?",
-      answer: "I specialize in AI Agent Architecture, combining Generative AI with blockchain technologies. My core strengths include Federated Learning, Privacy-Preserving AI, and building autonomous systems that bridge Web2 and Web3.",
+      question: "What is your primary area of research?",
+      answer: "My research focuses on Privacy-Preserving AI, specifically Federated Learning, Blockchain-based data governance, and Quantum Computing applications in cybersecurity. My IEEE-published paper covers Bibliometric Analysis of Blockchain-based Federated Learning for Privacy-Preserving AI Models (ICBDS 2025).",
     },
     {
       id: "2",
       question: "What technologies do you work with?",
-      answer: "I work with Python, TensorFlow, PyTorch for AI/ML; Solidity, Ethereum, Polygon for blockchain; and React, Node.js, Docker for full-stack development. I'm also experienced with IPFS and Web3.js for decentralized applications.",
+      answer: "For AI/ML research: Python, PyTorch, TensorFlow, Flower (Federated Learning), HuggingFace Transformers, OpenCV, Scikit-learn. For blockchain: Solidity, Ethereum, Polygon, IPFS, Web3.js, Truffle. For full-stack deployment: React.js, Node.js, FastAPI, Docker, PostgreSQL, LangChain.",
     },
     {
       id: "3",
-      question: "Are you open to collaboration or job opportunities?",
-      answer: "Absolutely! I'm always excited to work on innovative projects at the intersection of AI and blockchain. Whether it's freelance work, full-time positions, or collaborative projects, feel free to reach out.",
+      question: "Do you have published research?",
+      answer: "Yes! I have a published paper titled 'Bibliometric Analysis of Literature Based on Blockchain-Based Federated Learning for Privacy-Preserving AI Models' at the 2025 IEEE International Conference on Blockchain and Distributed Systems Security (ICBDS). DOI: 10.1109/icbds67396.2025.11376888. Co-authored with Dr. Sonali Patil and Dr. Deepali Naik.",
     },
     {
       id: "4",
+      question: "What are your academic qualifications?",
+      answer: "I hold an M.Tech. (CGPA: 8.88) from Pimpri Chinchwad College of Engineering (PCCOE) and a B.E. (69.40%) from Dr. J. J. Magdum College of Engineering, Jaysingpur (Shivaji University). I am currently an Assistant Professor at PCCOE.",
+    },
+    {
+      id: "5",
+      question: "Are you open to collaboration or research opportunities?",
+      answer: "Absolutely! I'm always excited to collaborate on AI research, privacy-preserving systems, quantum computing applications, or blockchain projects. Whether it's joint research, industry projects, or academic collaborations — feel free to reach out.",
+    },
+    {
+      id: "6",
       question: "How can I contact you?",
-      answer: "You can reach me via email at saurabhvmagdum@gmail.com, connect with me on LinkedIn, or check out my projects on GitHub. I'm always happy to discuss new opportunities and ideas!",
+      answer: "You can reach me via email at saurabhvmagdum@gmail.com, connect with me on LinkedIn, check my research profile on ORCID, or view my projects on GitHub. I'm always happy to discuss new research ideas and opportunities!",
     },
   ],
 };
@@ -333,7 +381,7 @@ export const footerConfig: FooterConfig = {
   logoText: "SAURABH",
   contactLabel: "Get in Touch",
   email: "saurabhvmagdum@gmail.com",
-  locationText: "India",
+  locationText: "Dhanori, Pune, Maharashtra, India",
   navigationLabel: "Navigation",
   navLinks: [
     { label: "Home", href: "#home" },
@@ -349,8 +397,8 @@ export const footerConfig: FooterConfig = {
     { iconName: "Linkedin", href: "https://www.linkedin.com/in/saurabh-magdum-940223221", label: "LinkedIn" },
     { iconName: "Mail", href: "mailto:saurabhvmagdum@gmail.com", label: "Email" },
   ],
-  tagline: "Building the future with AI & Blockchain\nLet's create something amazing together",
-  copyright: "© 2024 Saurabh Magdum. All rights reserved.",
+  tagline: "Researching the future with AI, Blockchain & Quantum Computing\nLet's build something meaningful together",
+  copyright: "© 2025 Saurabh Magdum. All rights reserved.",
   bottomLinks: [
     { label: "GitHub", href: "https://github.com/saurabhvmagdum" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/saurabh-magdum-940223221" },
