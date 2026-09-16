@@ -125,6 +125,7 @@ export function FeaturedProjects() {
   return (
     <section
       ref={sectionRef}
+      id="projects"
       className="relative w-full py-24 md:py-32 bg-forest-dark"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">

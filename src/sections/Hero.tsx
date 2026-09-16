@@ -72,6 +72,7 @@ export function Hero() {
   return (
     <section
       ref={sectionRef}
+      id="home"
       className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-forest-dark"
     >
       {/* Layer 1: Background gradient */}
