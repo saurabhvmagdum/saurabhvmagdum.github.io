@@ -8,12 +8,13 @@ import { FeaturedProjects } from './sections/FeaturedProjects';
 import { Testimonials } from './sections/Testimonials';
 import { FAQ } from './sections/FAQ';
 import { Footer } from './sections/Footer';
+import { ScrollToTop } from './components/ScrollToTop';
 import { siteConfig } from './config';
 import './App.css';
 
 function App() {
   // Initialize Lenis smooth scroll
-  useLenis();
+  const lenisRef = useLenis();
 
   useEffect(() => {
     if (siteConfig.siteTitle) {
@@ -53,6 +54,9 @@ function App() {
 
       {/* Footer - White Section with Massive Typography */}
       <Footer />
+
+      {/* Scroll To Top Button */}
+      <ScrollToTop lenisRef={lenisRef} />
     </main>
   );
 }
