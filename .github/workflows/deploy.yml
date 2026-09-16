@@ -18,7 +18,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   build:
     runs-on: ubuntu-latest
     steps:
@@ -36,6 +35,9 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      - name: Add .nojekyll to disable Jekyll processing
+        run: touch ./dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
