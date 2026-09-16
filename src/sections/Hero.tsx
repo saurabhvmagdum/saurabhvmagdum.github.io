@@ -94,7 +94,7 @@ export function Hero() {
         ref={textRef}
         className="absolute inset-0 flex items-center justify-center z-10 will-change-transform"
       >
-        <h1 className="text-[12vw] md:text-[14vw] lg:text-[16vw] font-sans font-extrabold text-white tracking-tighter leading-none select-none whitespace-nowrap">
+        <h1 className="text-[9vw] md:text-[11vw] lg:text-[13vw] font-sans font-extrabold text-white tracking-tighter leading-none select-none whitespace-nowrap">
           {heroConfig.backgroundText}
         </h1>
       </div>
