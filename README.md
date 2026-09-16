@@ -1,74 +1,95 @@
-# AirLens - Portfolio Template
+# Saurabh Magdum — Portfolio Website
 
-A premium single-page portfolio template with a dark forest theme, featuring cinematic scroll animations, parallax effects, and a photography/creative-focused design.
+Personal portfolio of **Saurabh Magdum**, AI Researcher & ML Engineer. Live at [saurabhvmagdum.github.io](https://saurabhvmagdum.github.io).
 
-## Features
+---
 
-- **Hero Section** - Full-screen parallax layered hero with large background text, cutout model image, and overlay text
-- **Intro Grid** - Split-line mask reveal title with masonry image grid featuring per-image directional clip-path reveals, Ken Burns zoom, and varied-depth parallax
-- **Services** - Two-column layout with animated heading and staggered service cards in a 2x2 grid
-- **Why Choose Me** - Feature cards with clip-path reveal animations, animated stat counters, and a wide landscape image with center-expand reveal
-- **Featured Projects** - Alternating layout project cards with clip-path reveals, parallax images, viewfinder overlays, and staggered text animations
-- **Testimonials** - Auto-playing Swiper carousel with hover color-invert effect and gradient fade overlays
-- **FAQ** - Radix UI accordion with staggered reveal animations and CTA button
-- **Footer** - Massive SVG logo text, three-column layout with contact info, navigation, and social links
+## About
+
+This is my personal portfolio showcasing my research, projects, and professional experience in:
+
+- **Federated Learning & Privacy-Preserving AI**
+- **Quantum Computing** (QAOA, QUBO optimization)
+- **Blockchain & Decentralized Systems**
+- **Large Language Models & RAG Systems**
+- **Computer Vision & Deep Learning**
+
+I am currently an **Assistant Professor at PCCOE** and hold an M.Tech. (CGPA: 8.88) in Computer Engineering. I am a published IEEE researcher (ICBDS 2025).
+
+---
 
 ## Tech Stack
 
-- **React 19** + **TypeScript**
-- **Vite** - Build tool
-- **Tailwind CSS 3** - Utility-first styling
-- **GSAP** + **ScrollTrigger** - Scroll-driven animations and parallax
-- **Lenis** - Smooth scroll
-- **Swiper** - Testimonials carousel
-- **Radix UI** - Accessible accordion component
-- **Lucide React** - Icon library
+| Layer | Technologies |
+|-------|-------------|
+| **Framework** | React 19 + TypeScript |
+| **Build Tool** | Vite |
+| **Styling** | Tailwind CSS 3 |
+| **Animations** | GSAP + ScrollTrigger, Lenis smooth scroll |
+| **Components** | Radix UI (Accordion), Swiper (Carousel), Lucide React (Icons) |
+| **Deployment** | GitHub Pages via GitHub Actions |
 
-## Quick Start
+---
+
+## Features
+
+- Full-screen parallax hero with cinematic scroll animations
+- Masonry image grid with per-image directional clip-path reveals and Ken Burns zoom
+- Alternating dark/light section layout with smooth scroll-driven transitions
+- Featured projects section with parallax images and viewfinder overlays
+- Experience section with auto-playing Swiper carousel
+- Animated stat counters and FAQ accordion
+- Fully responsive across all device sizes
+
+---
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Configuration
+The site runs at `http://localhost:5173`.
 
-All content is managed through `src/config.ts`. Each section has its own typed configuration object with empty placeholder values. Fill in the config objects to populate the site.
+---
 
-Each section has a null check - if the config is empty (no title and no array items), the section will not render.
+## Content Configuration
 
-### Config Objects
+All portfolio content is managed through a single file: [`src/config.ts`](./src/config.ts)
 
-- `siteConfig` - Site title, description, language
-- `heroConfig` - Background text, hero image, overlay text, brand name, navigation links
-- `introGridConfig` - Title lines, description, portfolio images, accent text
-- `featuredProjectsConfig` - Section titles, projects with images/descriptions
-- `servicesConfig` - Section titles, service items with icons
-- `whyChooseMeConfig` - Feature cards, stats, wide landscape image
-- `testimonialsConfig` - Testimonial cards with quotes and author info
-- `faqConfig` - FAQ items, CTA button
-- `footerConfig` - Logo, contact info, navigation, social links, copyright
+Each section has a typed config object:
 
-## Required Images
+| Config Object | Section |
+|--------------|---------|
+| `siteConfig` | Page title, meta description, language |
+| `heroConfig` | Background text, hero image, overlay text, nav links |
+| `introGridConfig` | About title, description, portfolio images |
+| `featuredProjectsConfig` | Projects with descriptions and categories |
+| `servicesConfig` | Technical expertise areas |
+| `whyChooseMeConfig` | Stats, feature cards, wide image |
+| `testimonialsConfig` | Work experience entries |
+| `faqConfig` | FAQ items, CTA |
+| `footerConfig` | Contact info, social links, copyright |
 
-Place images in the `public/` directory:
+---
 
-- **Hero**: A cutout/transparent PNG for the hero model image (recommended: ~500px wide)
-- **Portfolio**: 5 images for the masonry grid (various aspect ratios)
-- **Featured Projects**: 1 image per project (4:3 aspect ratio recommended)
-- **Why Choose Me**: 2 portrait images (3:4 aspect ratio), 1 wide landscape (21:9 or 3:1 aspect ratio)
-- **Testimonials**: 1 avatar image per testimonial (square, small)
+## Deployment
 
-## Design
+Deployment is automated via GitHub Actions (`.github/workflows/deploy.yml`):
 
-- **Color Theme**: Deep forest charcoal (#0d1310) with off-white (#f4f4f4) alternating sections
-- **Typography**: Manrope (headings), Playfair Display (italic accents), DM Sans (body)
-- **Animations**: GSAP ScrollTrigger with clip-path reveals, parallax, scale effects, and staggered entrances
-- **Layout**: Alternating dark/light sections, max-width 7xl container
+1. Push to `master` branch
+2. GitHub Actions builds the site (`npm run build`)
+3. The `dist/` output is deployed to GitHub Pages
 
-## Notes
+---
 
-- All animations use GSAP with ScrollTrigger for scroll-driven effects
-- Lenis provides smooth scroll behavior connected to GSAP ticker
-- The Swiper carousel auto-plays with configurable breakpoints
-- Service and footer icons use a string-to-component map (iconName field maps to Lucide icon components: Camera, Diamond, Users, Sparkles, Instagram, Twitter, Linkedin, Mail)
+## Contact
+
+- **Email**: saurabhvmagdum@gmail.com
+- **LinkedIn**: [linkedin.com/in/saurabh-magdum-940223221](https://www.linkedin.com/in/saurabh-magdum-940223221)
+- **GitHub**: [github.com/saurabhvmagdum](https://github.com/saurabhvmagdum)
+
+---
+
+© 2025 Saurabh Magdum. All rights reserved.
